@@ -1,6 +1,5 @@
 package com.lab10.laboratorio10_idnp
 
-import android.Manifest
 import android.content.pm.PackageManager
 import android.location.Location
 import androidx.appcompat.app.AppCompatActivity
@@ -44,7 +43,7 @@ class FusedLocation : AppCompatActivity() {
                 val location: Location? = locationResult.lastLocation
                 if (location != null) {
                     latitude.text = Editable.Factory.getInstance().newEditable("Latitude: "+location.latitude)
-                    longitude.text = Editable.Factory.getInstance().newEditable("Latitude: "+location.longitude)
+                    longitude.text = Editable.Factory.getInstance().newEditable("Longitude: "+location.longitude)
                     Log.e("TAG",""+location.latitude+"\t"+location.longitude)
                 }
             }
